@@ -32,3 +32,12 @@ subscribeBtn.addEventListener('mouseout', function () {
   this.style.backgroundColor = '#3d424e';
   this.style.color = '#fff';
 });
+const themeToggle = document.getElementById('themeToggle');
+
+themeToggle.addEventListener('change', function () {
+    if (this.checked) {
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+    }
+});
