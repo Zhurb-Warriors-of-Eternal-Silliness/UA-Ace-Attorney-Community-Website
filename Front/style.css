@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -23,6 +23,8 @@ nav {
   left: 0;
   width: 100%;
   padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для навбара */
+  z-index: 100; /* Позначення шару для навбара */
 }
 
 nav h1 {
@@ -39,6 +41,7 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 nav li {
@@ -68,7 +71,7 @@ header {
 
 header h1 {
   font-family: 'Exo 2', sans-serif;
-  font-size: 36px;
+  font-size: 48px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -83,10 +86,11 @@ button {
   background-color: #cc0000; /* Темно-бордовий колір кнопки */
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 10px 30px;
+  border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.2s;
+  font-size: 16px;
 }
 
 button:hover {
@@ -98,32 +102,40 @@ button:hover {
   background-color: #fff; /* Білий колір вступного блоку */
   text-align: center;
   padding: 40px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для блоку */
+  margin-bottom: 40px;
 }
 
 /* Стилі для опису гри */
 #about {
   text-align: center;
   padding: 40px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для блоку */
+  margin-bottom: 40px;
 }
 
 #about img {
   max-width: 100%;
+  border-radius: 10px;
 }
 
 /* Стилі для галерей */
 #galleries {
   text-align: center;
   padding: 40px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для блоку */
+  margin-bottom: 40px;
 }
 
 .gallery {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
 .gallery img {
-  max-width: 30%;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 /* Стилі для розділу з організаторами */
@@ -131,9 +143,14 @@ button:hover {
   background-color: #1c1c1c;
   text-align: center;
   padding: 40px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для блоку */
+  margin-bottom: 40px;
 }
 
 .organizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -150,11 +167,21 @@ button:hover {
 }
 
 /* Стилі для інших розділів */
-#section1,
-#section2 {
-  background-color: #fff; /* Білий колір розділів */
+section {
   text-align: center;
   padding: 40px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для блоку */
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 /* Стилі для контактної інформації */
@@ -163,16 +190,21 @@ button:hover {
   color: #fff;
   text-align: center;
   padding: 40px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для блоку */
+  margin-bottom: 40px;
 }
 
 #contact form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 
 #contact input {
-  padding: 10px;
+  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   margin-right: 10px;
 }
 
@@ -180,6 +212,9 @@ button:hover {
   background-color: #fff;
   color: #800000; /* Бордовий колір кнопки контактної інформації */
   transition: background-color 0.2s, color 0.2s;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 16px;
 }
 
 #contact button:hover {
@@ -192,6 +227,8 @@ button:hover {
   background-color: #1c1c1c;
   text-align: center;
   padding: 40px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для блоку */
+  margin-bottom: 40px;
 }
 
 .social-links {
@@ -199,6 +236,7 @@ button:hover {
   padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .social-links li {
