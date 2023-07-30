@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    color: #333;
 }
 
 .container {
@@ -14,11 +15,21 @@ body {
 
 /* Стилі для навбара */
 nav {
-    background-color: #333;
+    background-color: #3d424e;
+    color: #fff;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    padding: 10px 0;
+}
+
+nav h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
 nav ul {
@@ -26,6 +37,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
 }
 
 nav li {
@@ -38,27 +50,48 @@ nav a {
     padding: 10px;
 }
 
+nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+
 /* Стилі для заголовка */
 header {
-    background-color: #333;
+    background-color: #3d424e;
     color: #fff;
     text-align: center;
     padding: 120px 0 40px;
 }
 
+header h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
 /* Стилі для кнопки */
 button {
-    background-color: #007bff;
+    background-color: #3d424e;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #303340;
 }
 
 /* Стилі для вступного блоку */
 #intro {
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     text-align: center;
     padding: 40px 0;
 }
@@ -75,7 +108,7 @@ button {
 
 /* Стилі для контактної інформації */
 #contact {
-    background-color: #333;
+    background-color: #3d424e;
     color: #fff;
     text-align: center;
     padding: 40px 0;
@@ -92,12 +125,52 @@ button {
     margin-right: 10px;
 }
 
+#contact button {
+    background-color: #fff;
+    color: #3d424e;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#contact button:hover {
+    background-color: #3d424e;
+    color: #fff;
+}
+
 /* Стилі для підвалу */
 footer {
-    background-color: #007bff;
+    background-color: #3d424e;
     color: #fff;
     text-align: center;
     padding: 10px;
 }
 
-/* Додайте інші стилі за бажанням, щоб зробити дизайн
+/* Стилі для розділу соціальних мереж */
+#social {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin-right: 15px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Додайте інші стилі за бажанням, щоб зробити дизайн більш складним, цікавим та сучасним */
