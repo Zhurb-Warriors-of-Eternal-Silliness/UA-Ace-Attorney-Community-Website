@@ -1,0 +1,103 @@
+/* Стилі для загального вигляду */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стилі для навбара */
+nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Стилі для заголовка */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 120px 0 40px;
+}
+
+/* Стилі для кнопки */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Стилі для вступного блоку */
+#intro {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Стилі для опису гри */
+#about {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#about img {
+    max-width: 100%;
+}
+
+/* Стилі для контактної інформації */
+#contact {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#contact form {
+    margin-top: 20px;
+}
+
+#contact input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Стилі для підвалу */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Додайте інші стилі за бажанням, щоб зробити дизайн
